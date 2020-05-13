@@ -34,7 +34,7 @@ body {
 }
 
 h1 {
-  margin: 2rem 1rem;
+  margin: 1rem;
   padding: 1rem;
   font-size: calc(1.7rem + 3vw);
 }
@@ -47,18 +47,18 @@ strong {
   text-align: center;
 }
 
-p {
-  padding-bottom: 4rem;
-}
-
 section {
-  margin-bottom: 2rem;
+  padding-bottom: 4rem;
 }
 
 img, iframe {
   max-width: 100%;
   display: block;
   margin: 0 auto;
+}
+
+p + img {
+  padding-top: 4rem;
 }
 
 ul {
@@ -82,12 +82,17 @@ address {
 
 
 /* Utility classes */
+
 .center {
   text-align: center;
 }
 
 .container {
   display: flex
+}
+
+.hours {
+  padding: 1em 2em;
 }
 
 .mono {
@@ -97,6 +102,7 @@ address {
 
 
 /* Navigation */
+
 .nav-bar {
   background-color: var(--off-black);
   flex-direction: column;
@@ -129,6 +135,7 @@ address {
 }
 
 /* Menu and social sections */
+
 .printable {
   padding-bottom: 1rem;
 }
@@ -181,6 +188,7 @@ address {
 @media all and (min-width: 64em) {
   h1 {
     font-size: 3em;
+    padding-top: 2rem;
   }
   .nav-bar {
     width: 80vw;
@@ -201,7 +209,7 @@ address {
   }  
   /* padding-top = the height of the fixed nav-bar plus some additional
    * clearance */
-  .fixed-nav {
+  section {
     padding-top: 8rem;
   }
 }
