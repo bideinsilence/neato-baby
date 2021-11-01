@@ -1,2 +1,2 @@
 # neato-baby
-Mock-up Website for Neato Burrito and The Baby Bar
+Mock-up website for Neato Burrito and The Baby Bar
