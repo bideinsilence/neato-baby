@@ -14,8 +14,9 @@ html {
   /* Using viewport relative units and calc() for responsiveness; 
    * 1rem part ensures font-size never drops below the default value. */
   font-size: calc(1rem + 0.3vw);
+  font-size: clamp(1rem, calc(1rem + 0.3vw), 2rem);
   line-height: 1.75rem;
-  padding: 1vh 1.5rem 2rem 1.5rem;
+  padding: 1vh 1vw 5vh 1vw;
   scroll-behavior: smooth;
 }
 
@@ -37,9 +38,9 @@ body {
 
 main {
   /* "Readable range" is ~ 50-80. */
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   max-width: 70ch;
+  padding: 0 1.5rem;
 }
 
 
@@ -128,7 +129,7 @@ nav {
 
 .logo-links img {
   border-radius: 2px;
-  height: 4rem;
+  height: 3rem;
   margin: 0;
 }
 
@@ -219,24 +220,30 @@ ul.food > li {
   }
 }
 
-@media (min-width: 64em) {
+@media (min-width: 43em) {
   h1 {
-    margin-top: 5rem;
+    margin-top: 6rem;
   }
   nav {
     background-color: black;
     background-color: var(--off-black);
     justify-content: space-between;
-    left: 5vw;
+    left: 0;
     padding-top: 1vh;
     position: fixed;
     top: 0;
-    width: 90vw;
+    width: 100vw;
   }  
   /* Padding at top of main = the height of the fixed nav-bar plus some
    * additional clearance */
   section {
-    padding-top: 6rem;
+    padding-top: 5rem;
+  }
+  .logo-links {
+    margin-left: 1rem;
+  }
+  .text-links {
+    margin-right: 1rem;
   }
 }
 
