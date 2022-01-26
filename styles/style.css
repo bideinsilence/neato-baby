@@ -99,6 +99,13 @@ section {
   text-align: center;
 }
 
+.grid {
+  display: grid;
+  gap: 1em;
+  grid-gap: 1em;
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+}
+
 .mono {
   font-family: 'Andale Mono', monospace;
   font-size: 1.25rem;
@@ -156,15 +163,16 @@ nav {
   padding-bottom: 1rem;
 }
 
-.food {
-  display: grid;
-  gap: 1em;
-  grid-gap: 1em;
-  grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+dl dt {
+  padding: 0.5rem;
+  font-weight: bold;
 }
 
-ul.food > li {
+dd,
+#menu ul li {
+  margin: 0;
   text-align: center;
+  text-transform: uppercase;
 }
 
 .social-links {
@@ -221,8 +229,18 @@ ul.food > li {
 }
 
 @media (min-width: 43em) {
+  nav {
+    justify-content: space-between;
+  }  
+  .logo-links,
+  .text-links {
+    margin: 0 0.5rem;
+  }
+}
+
+@media (min-width: 64em) {
   h1 {
-    margin-top: 6rem;
+    margin-top: 5rem;
   }
   nav {
     background-color: black;
@@ -238,13 +256,5 @@ ul.food > li {
    * additional clearance */
   section {
     padding-top: 5rem;
-  }
-  .logo-links {
-    margin-left: 1rem;
-  }
-  .text-links {
-    margin-right: 1rem;
-  }
 }
-
 
