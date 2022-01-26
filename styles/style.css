@@ -27,7 +27,9 @@ html {
 /* General Styling */
 
 body {
+  background-color: black;
   background-color: var(--off-black);
+  color: white;
   color: var(--off-white);
   font-family: "Helvetica", "Arial", sans-serif;
   margin: 0;
@@ -70,12 +72,14 @@ ul {
 }
 
 a {
+  color: white;
   color: var(--off-white);
   font-family: 'Andale Mono', monospace;
   text-decoration: none;
 }
 
 a:hover {
+  color: crimson;
   color: var(--baby-red);
 }
 
@@ -220,7 +224,7 @@ ul.food > li {
     margin-top: 5rem;
   }
   nav {
-    background-color: ;
+    background-color: black;
     background-color: var(--off-black);
     justify-content: space-between;
     left: 5vw;
