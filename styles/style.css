@@ -295,9 +295,6 @@ dd,
   main {
     max-width: 80%; 
   }
-  .print-hide {
-    display: none;
-  }
   .print-show {
     display: revert;
   }
