@@ -5,7 +5,7 @@
 Mock-up website for Neato Burrito and The Baby Bar
 
 I wanted to build a modern, responsive site from a blank html page. Neato
-Burrito has never had a website, and the owners are feeling it may be time
+Burrito has never had a website and the owners are feeling it may be time,
 especially as a central location to get their menu out to the public. This
 site's simple DIY structure and design fits the location's aesthetic. The site
 is waiting before going live for a new logo design and final decisions from
